@@ -55,6 +55,7 @@
   overflow: hidden;
   border: 5px solid red;
   background-color: #1D1B26;
+  animation: portfolio 1s linear;
 }
 
 @keyframes animate {
@@ -64,6 +65,14 @@
     100%{
       transform: rotate(360deg);
     }
+}
+@keyframes portfolio {
+  0%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
+  }
 }
 .profileImg{
   position: relative;
