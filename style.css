@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&family=Pixelify+Sans:wght@600&family=Poppins:ital,wght@0,100;0,500;1,400;1,500&family=Roboto:wght@300;500&family=Rock+Salt&display=swap');
+.dp {
+  width: 50px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px, rgb(51, 51, 51) 0px 0px 0px 3px;
+}
+.myName{
+  color: #fff;
+  margin-top: 0.5em;
+  margin-left: 5.2em;
+  font-family: 'Luckiest Guy', cursive;
+  animation: name 2s ease-in-out ;
+}
+/* Loader Animation */
+.loader-wrapper {
+  padding-left: 1em;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  background-color: #242f3f;
+  display: flex;
+  z-index: -1; 
+}
+.loader {
+  display: inline-block;
+  width: 100px; 
+  height: 100px;
+  position: relative;
+  border: 5px solid #Fff; 
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  border-radius: 50%; 
+  animation: loader 2s ease-in-out ;
+}
+/* For loading */
+@keyframes loader {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+/* For My Name */
+@keyframes name {
+  from{
+    opacity: 0;
+    transform: translateX(-50%);
+    transform: (-50%);
+  }
+  to{
+    opacity: .7;
+    transform: translateX(0);
+  }
+}
+.container{
+  display: flex;
+  position: relative;
+  height: 200vh;
+  overflow: hidden;
+  border: 5px solid red;
+  background-color: #1D1B26;
+}
+.container::before{
+  content:'';
+  position: relative;
+  width: 100px;
+  height: 100%;
+  background-color: white;
+  box-shadow: 0 0 20px rgb(8,8,8);
+  animation: animate 4s linear infinite;
+}  
+.container::after{
+  content:'';
+  position: relative;
+  inset: 10px;
+  background-color: rgb(4, 75, 97);
+  border-radius: 16px;
+}
+@keyframes animate {
+    0%{
+      transform: rotate(0deg);
+    }
+    100%{
+      transform: rotate(360deg);
+    }
+}
+.profileImg{
+  position: relative;
+  width: 60%;
+  margin: 1em 2em;
+  border-radius: 50%; 
+}
+
+.profileHead{
+  color: white;
+  padding-left: 0.5em;
+  font-family: 'Luckiest Guy', cursive;
+}
+.about{
+  color: white;
+  margin-left: 1em;
+}
+.dp2 {
+  margin-top: -5em;
+  margin-left: 12em;
+  width: 50px;
+}
+.leftside{
+  position: absolute;
+  width: 99.2vw;
+  height: max-content;
+}
+.column2{
+  color: white;
+  width: 40vw;
+  height: 60vh;
+  margin-left: -1em;
+  border: 1px solid red;
+}
+.PortfolioVideo{
+  margin-top: 2em;
+  margin-left: 9em;
+  width: 60%;
+}
+.content{
+  color: white;
+  padding-left: 2em;
+  font-size: 20px;
+  font-family: 'Pixelify Sans', sans-serif;
+}
+.contentBio{
+  position: absolute;
+  color: white;
+  padding-left: 2em;
+  font-size: 20px;
+  font-family: 'Pixelify Sans', sans-serif;
+}
