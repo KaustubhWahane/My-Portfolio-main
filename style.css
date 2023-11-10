@@ -80,15 +80,48 @@
   margin: 1em 2em;
   border-radius: 50%; 
 }
+h1{
+  margin-left: 1.8em;
+  color: red;
+  font-size: 1em;
+}
 
-.profileHead{
-  color: white;
-  padding-left: 0.5em;
-  font-family: 'Luckiest Guy', cursive;
+h1 span{
+  letter-spacing: 0.2em;
+  animation: animate 3s linear infinite;
+}
+
+h1 span:nth-child(1){animation-delay: 0s;}
+h1 span:nth-child(2){animation-delay: 0.3s;}
+h1 span:nth-child(3){animation-delay: 0.6s;}
+h1 span:nth-child(4){animation-delay: 0.9s;}
+h1 span:nth-child(5){animation-delay: 1.2s;}
+h1 span:nth-child(6){animation-delay: 1.6s;}
+h1 span:nth-child(7){animation-delay: 1.8s;}
+h1 span:nth-child(8){animation-delay: 2s;}
+@keyframes animate{
+  0%,100%{
+      color: #fff;
+      filter: blur(2px);
+      text-shadow: 0 0 10px #ff9d00,
+      0 0 20px #ff9d00,
+      0 0 400px #ff9d00,
+      0 0 80px #ff9d00,
+      0 0 120px #ff9d00,
+      0 0 200px #ff9d00,
+      0 0 300px #ff9d00,
+      0 0 400px #ff9d00;
+  }
+
+  5%,95%{
+      color: red;
+      filter: blur(0px);
+      text-shadow: none;
+  }
 }
 .about{
   color: white;
-  margin-left: 1em;
+  margin-left: 1.5em;
 }
 .dp2 {
   margin-top: -5em;
@@ -100,18 +133,21 @@
   width: 99.2vw;
   height: max-content;
 }
-.column2{
+.firstRow {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.column1 ,.column2{
   color: white;
-  width: 40vw;
+  width: 48%; 
   height: 60vh;
-  margin-left: -1em;
-  border: 1px solid red;
 }
-.PortfolioVideo{
+.PortfolioVideo {
   margin-top: 2em;
-  margin-left: 9em;
-  width: 60%;
+  width: 100%;
 }
+
 .content{
   color: white;
   padding-left: 2em;
