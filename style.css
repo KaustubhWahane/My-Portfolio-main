@@ -194,15 +194,15 @@ h1 span:nth-child(8){animation-delay: 2s;}
 .skills{
   text-align: center;
 }
-/* Glowing Text  */
+/* Glowing Text */
 .box{
   position: relative;
-  width: 300px;
-  height: 300px;
+  width: 350px;
+  height: 250px;
   display: inline-block;
   margin: 40px;
   background: #060c21;
-  transition: .5s;
+  transition: 1.5s;
 }
 .box:hover{
   height: 400px;
@@ -214,7 +214,8 @@ h1 span:nth-child(8){animation-delay: 2s;}
   box-sizing: border-box;
 }
 .box .imgBx img{
-  width: 300px;
+  width: 350px;
+  height: 250px;
   opacity: 0.3;
   transition: 0.5s;
 }
@@ -240,6 +241,10 @@ h1 span:nth-child(8){animation-delay: 2s;}
   z-index: -2;
   filter: blur(40px);
 }
+.glowingCards{
+  margin-top: 5em;
+  margin-left: 17em;
+}
 .box:before,.box:after{
   background: linear-gradient(225deg, #89ff00,#010615,#00bcd4);
 }
@@ -249,7 +254,7 @@ h1 span:nth-child(8){animation-delay: 2s;}
 .box:nth-child(3):before,.box:nth-child(3):after{
   background: linear-gradient(225deg, #dd6300,#010615,#2196f3);
 }
-.box .content{
+.content{
   position: absolute;
   bottom: 10px;
   top: 300px;
