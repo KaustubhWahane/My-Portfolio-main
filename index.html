@@ -6,8 +6,8 @@
     <title>My Portfolio</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <link rel="stylesheet" href="script.js">
-</head>
+    <script src="script.js"></script>
+  </head>
 <body>
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
@@ -40,10 +40,12 @@
         </div>
       </nav>
       <!-- Loader Animation  -->
+      <!-- Loader Animation  -->
       <div class="loader-wrapper">
         <span class="loader"><span class="loader-inner"></span></span>
         <h1 class="myName">🙏🏻Namaste and Welcome To Kaustubh Wahane's Portfolio🙏🏻</h1>
       </div>
+      <!-- First Introductory Container -->
       <div class="wrapper">
        <div class="container">
             <div class="column1">
@@ -60,11 +62,12 @@
                 <br> Video cant be embed as it makes the website slow
                 <p class="videoContent">In this video, I have showcase the code behind my portfolio which highlights the innovative features and design choices that make it unique. Give it a try :) to gain insight into my development skills and the thought process that went into creating this project</p>
               </div>
-        </div>
+        </div>  
+      </div>
+      <!-- Relevant Skills (Currenlty Updating) Container -->
         <div class="wrapper2">
           <div class="container2">
-            <div class="column12">
-              <h1 style="text-align: center;">
+              <h1 class="header-text" style="color: white; text-align: center; font-size: 4em; ">
                 <span>S</span><span>K</span><span>I</span><span>L</span><span>L</span><span>S</span>
               </h1>
                 <div class="glowingCards">
@@ -73,28 +76,108 @@
                       <img src="assets/MernStack.png" alt="">
                   </div>
                   <div class="content">
-                      <h2>MERN Stack<br><span>Currently Pursuing</span></h2>
+                      <h2>MERN Stack<br><span>Currently Pursuing <br> At DCodeTech Thane Branch</span></h2>
                   </div>
                   </div>
                   <div class="box">
                       <div class="imgBx">
-                          <img src="https://i.pinimg.com/originals/93/0d/02/930d0232a969c5b7a6513e0b03a80d2d.jpg" alt="">
+                        <img src="assets/JavaScript-.png" alt="">
                       </div>
                       <div class="content">
-                          <h2>John Doe<br><span>Creative Designer</span></h2>
+                          <h2>JavaScript Enthusiast<br><span>Youtube Channel of Akshay Saini</span></h2>
                   </div>
                   </div>
                   <div class="box">
                       <div class="imgBx">
-                          <img src="https://i.pinimg.com/originals/93/0d/02/930d0232a969c5b7a6513e0b03a80d2d.jpg" alt="">
+                        <img src="assets/React.png" alt="">
                       </div>
                       <div class="content">
-                          <h2>John Doe<br><span>Creative Designer</span></h2>
+                          <h2>ReactJS<br><span>Currently Pursuing in DCodeTech</span></h2>
                   </div>
+                  </div>
+                  <div class="box">
+                    <div class="imgBx">
+                      <img src="assets/Angular.png" alt="">
+                    </div>
+                    <div class="content">
+                        <h2>Angular<br><span>From Youtube Tutorials with intermediate Skills </span></h2>
+                </div>
+                </div>
+                </div>
+          </div>
+        </div>
+      <!--  Projects Container -->
+        <div class="wrapper3">
+          <div class="container3">
+            <h1 class="header-text">
+              <span>P</span><span>R</span><span>O</span><span>J</span><span>E</span><span>C</span><span>T</span><span>S</span>
+            </h1>
+              <div class="AllRepositories">
+                <div class="AllProjects">
+                  <img src="assets/Meesho Clone.png" alt="" class="projectPhoto">
+                  <div class="forButton">
+                    <a href="https://github.com/KaustubhWahane/Project-Meesho" target="_blank"><button class="bn30">GitHub Link</button></a>
                   </div>
                 </div>
+                <div class="AllProjects">
+                  <img src="assets/FirstWebsite.png" alt="" class="projectPhoto">
+                  <div class="forButton2">
+                    <a href="https://github.com/KaustubhWahane/First-Designer-of-HTML-and-CSS-website" target="_blank"><button class="bn30">GitHub Link</button></a>
+                  </div>
+                </div>
+                <div class="AllProjects">
+
+                </div>
+                <div class="AllProjects">
+
+                </div>
+              </div>
+              
+        </div>
+      </div>
+      <!-- Footer -->
+      <footer>
+        <div class="glowing-rectangle">
+          
+        </div>
+        <div class="user-feedback">
+          <h3>Leave a Comment</h3>
+          <br>
+          <form action="#" method="post">
+            <br>
+            <label for="user-name">Your Name:</label>
+            <input type="text" id="user-name" name="user-name" placeholder="Not Bhupendar Jogi" required>
+            <br>
+            <label for="user-comment">Comment:</label>
+            <textarea id="user-comment" name="user-comment" rows="4" required></textarea>
+            <button type="submit">Submit</button>
+          </form>
+        </div>
+        <!-- For Rating -->
+        <br>
+        <div class="UserReply">
+          <div class="userRatingReply">
+            <h1> What are your thoughts about it Let me know &#128516;</h1>
+            <div class="rating">
+              <div class="star-container">
+                <div class="star" onclick="showAlert1()"></div>
+              </div>
+              <div class="star-container">
+                <div class="star" onclick="showAlert2()"></div>
+              </div>
+              <div class="star-container">
+                <div class="star" onclick="showAlert3()"></div>
+              </div>
+              <div class="star-container">
+                <div class="star" onclick="showAlert4()"></div>
+              </div>
+              <div class="star-container">
+                <div class="star" onclick="showAlert5()"></div>
+              </div>
             </div>
           </div>
         </div>
+      </footer>
+      
 </body>
 </html>
