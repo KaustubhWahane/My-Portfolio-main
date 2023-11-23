@@ -5,12 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Portfolio</title>
     <link rel="stylesheet" href="style.css">
+    <!-- Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <script src="script.js"></script>
   </head>
 <body>
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg bg-body-tertiary ">
+    <div class="margin-top">
+      <!-- To fix navbar Overlay -->
+    </div>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
         <div class="container-fluid">
           <a class="navbar-brand" href="https://github.com/KaustubhWahane" target="_blank"><img src="assets/ThankYou.jpeg" alt="Error 404" class="dp"></a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
@@ -19,28 +23,23 @@
           <div class="collapse navbar-collapse" id="navbarNavDropdown">
             <ul class="navbar-nav ms-auto">
             <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                <a class="nav-link active" aria-current="page" href="#home">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Features</a>
+                <a class="nav-link" href="#skills">Skills</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Pricing</a>
+                <a class="nav-link" href="#projects">Projects</a>
               </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Dropdown link</a>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">Action</a></li>
-                  <li><a class="dropdown-item" href="#">Another action</a></li>
-                  <li><a class="dropdown-item" href="#">Something else here</a></li>
-                </ul>
+              <li class="nav-item">
+                <a class="nav-link" href="#contact">ContactMe</a>
               </li>
             </ul>
           </div>
         </div>
       </nav>
       <!-- Loader Animation  -->
-      <div class="loader-wrapper">
+      <div id="home" class="loader-wrapper">
         <span class="loader"><span class="loader-inner"></span></span>
         <h1 class="myName">🙏🏻Namaste and Welcome To Kaustubh Wahane's Portfolio🙏🏻</h1>
       </div>
@@ -52,7 +51,7 @@
               <h1>
                 <span>K</span><span>A</span><span>U</span><span>S</span><span>T</span><span>U</span><span>B</span><span>H</span>
             </h1>
-              <h2 class="about">About Me</h2><img src="assets/Kawai ne Paimon.jpeg" alt="" class="dp2">
+              <h1 aria-label="Hi! I'm a developer">Hi! I'm a &nbsp;<span class="typewriter"></span></h1>
               <p class="contentBio">/*Cognitive web developer passionate about crafting <br> artistic digital experiences through code.
                 Dedicated <br> to pushing web technology boundaries for immersive,<br> user-centric  interfaces. 
                 Striving to blend creativity <br> and functionality, creating memorable contributions <br> in the digital realm.*/
@@ -60,16 +59,19 @@
             </div>
               <div class="column2">
                 <!-- Here I will add the video of PortFolio -->
-                <h1 style="text-align: center;">There will be a Video of the PortFolio</h1>
-                <br> Video cant be embed as it makes the website slow
+                <br><br>
+                <h2 style="text-align: center;">Here is a step by step guide on how I made this beautiful website</h2>
+                <div class="iframe"><iframe width="560" height="315" src="https://www.youtube.com/embed/6KJqEPVfoDs?si=bFnucxCiQqUaWlXc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
+                <br>
                 <p class="videoContent">In this video, I have showcase the code behind my portfolio which highlights the innovative features and design choices that make it unique. Give it a try :) to gain insight into my development skills and the thought process that went into creating this project</p>
               </div>
+            </div>
         </div>  
       </div>
       <!-- Relevant Skills (Currently Updating) Container -->
         <div class="wrapper2">
           <div class="container2">
-              <h1 class="header-text" style="color: white; text-align: center; font-size: 4em; ">
+              <h1 id="skills" class="header-text" style="color: white; text-align: center; font-size: 4em; ">
                 <span>S</span><span>K</span><span>I</span><span>L</span><span>L</span><span>S</span>
               </h1>
                 <div class="glowingCards">
@@ -111,7 +113,7 @@
       <!--  Projects Container -->
         <div class="wrapper3">
           <div class="container3">
-            <h1 class="header-text">
+            <h1 id="projects" class="header-text">
               <span>P</span><span>R</span><span>O</span><span>J</span><span>E</span><span>C</span><span>T</span><span>S</span>
             </h1>
               <div class="AllRepositories">
@@ -139,7 +141,7 @@
       <!-- Footer -->
       <footer>
         <div class="glowing-rectangle">
-          <div class="imageandSocial">
+          <div id="contact" class="imageandSocial">
             <img src="assets/FooterPic.png" alt="" class="LastFooterImage">
             <div class="flex-col">
               <div class="social instagram">
@@ -154,7 +156,7 @@
             </div>
           </div>
           <hr style="border-top: 10px solid red;border-radius: 6px; color: rgb(0, 21, 255);">
-            <p><b><i> "Dedicated Web enthusiast and React aficionado, I find joy in crafting digital experiences using the latest front-end tools. Currently honing my skills through dedicated React courses, <br> I thrive on  turning code into visually captivating websites. <br> Beyond the screen, you'll find me immersed in the world of <br> gaming.  As a true devotee of One Piece ,Inspired by Luffy's unwavering determination, I bring the same spirit to  my web  development endeavors. Explore my digital portfolio and join me on a journey where code, creativity, and passion converge:- <br> Where the web meets inspiration."</i></b></p>
+            <p><b><i> "Dedicated Web enthusiast and React aficionado, I find joy in crafting digital experiences using the latest front-end tools. Currently honing my skills through dedicated React courses, I thrive on  turning code into visually captivating <br>  websites. Beyond the screen, you'll find me immersed in the world of <br> gaming. As a true devotee of One Piece ,Inspired by Luffy's  unwavering <br> determination, I bring the same spirit to  my web  development endeavors. Explore <br> my digital portfolio and join me on a journey where code, creativity, and passion converge:- <br> <strong style="color: purple;">Where the web meets inspiration."</strong></i></b></p>
         </div>
         <!-- For Rating -->
         <br>

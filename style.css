@@ -1,7 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&family=Pixelify+Sans:wght@600&family=Poppins:ital,wght@0,100;0,500;1,400;1,500&family=Roboto:wght@300;500&family=Rock+Salt&display=swap');
+html{
+  scroll-behavior: smooth;
+}
+.margin-top{
+  margin-top: 5em;
+}
 .dp {
   width: 50px;
   box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px, rgb(51, 51, 51) 0px 0px 0px 3px;
+}
+.nav-item{
+  font-family: 'Luckiest Guy', cursive;
 }
 .myName{
   color: #fff;
@@ -57,9 +66,8 @@
   position: relative;
   height: 80vh;
   overflow: hidden;
-  border: 5px solid red;
+  /* border: 5px solid red; */
   background-color: #1D1B26;
-  animation: portfolio 1s linear;
 }
 .wrapper2{
   position: relative;
@@ -72,9 +80,8 @@
   margin-top: 2em;
   width: 90%;
   height: 80vh;
-  border: 5px solid red;
+  /* border: 5px solid red; */
   background-color: #1D1B26;
-  animation: portfolio 1s linear;
 }
 .column12{
   margin: 1.5em;
@@ -91,13 +98,8 @@
       transform: rotate(360deg);
     }
 }
-@keyframes portfolio {
-  0%{
-    opacity: 0;
-  }
-  100%{
-    opacity: 1;
-  }
+.iframe{
+  margin-left: 2em;
 }
 .profileImg{
   width: 60%;
@@ -162,12 +164,54 @@ h1 span:nth-child(8){animation-delay: 2s;}
   50% { border-color: orange }
 
 }
-.dp2 {
-  margin-top: -5em;
-  margin-left: 17em;
-  width: 50px;
-  
+.typewriter {
+  --caret: currentcolor;
 }
+
+.typewriter::before {
+  content: "";
+  animation: typing 13.5s infinite;
+}
+@keyframes typing {
+  0.0000%, 27.3488% { content: ""; }
+  1.1395%, 26.2093% { content: "H"; }
+  2.2791%, 25.0698% { content: "HT"; }
+  3.4186%, 23.9302% { content: "HTM"; }
+  4.5581%, 22.7907% { content: "HTML"; }
+  5.6977%, 21.6512% { content: "HTMLH"; }
+  6.8372%, 20.5116% { content: "HTMLHE"; }
+  7.9767%, 19.3721% { content: "HTMLHER"; }
+  9.1163%, 18.2326% { content: "HTMLHERO"; }
+
+  30.7674%, 51.2791% { content: ""; }
+  31.9070%, 50.1395% { content: "C"; }
+  33.0465%, 49.0000% { content: "CO"; }
+  34.1860%, 47.8605% { content: "COD"; }
+  35.3256%, 46.7209% { content: "CODE"; }
+  36.4651%, 45.5814% { content: "CODER"; }
+
+  54.6977%, 75.2093% { content: ""; }
+  55.8372%, 74.0698% { content: "R"; }
+  56.9767%, 72.9302% { content: "RE"; }
+  58.1163%, 71.7907% { content: "REA"; }
+  59.2558%, 70.6512% { content: "READ"; }
+  60.3953%, 69.5116% { content: "READE"; }
+  61.5349%, 68.3721% { content: "READER"; }
+
+  78.6279%, 96.8605% { content: ""; }
+  79.7674%, 95.7209% { content: "G"; }
+  80.9070%, 94.5814% { content: "GA"; }
+  82.0465%, 93.4419% { content: "GAM"; }
+  83.1860%, 92.3023% { content: "GAME"; }
+  84.3256%, 91.1628% { content: "GAMER"; }
+}
+
+.typewriter::after {
+  content: "";
+  border-right: 1px solid var(--caret);
+  animation: blink 0.5s linear infinite;
+}
+
 .leftside{
   position: absolute;
   width: 99.2vw;
@@ -313,7 +357,7 @@ h1 span:nth-child(8){animation-delay: 2s;}
   margin-top: 2em;
   width: 90%;
   height: 140vh;
-  border: 5px solid red;
+  /* border: 5px solid red; */
   background-color: #1D1B26;
   animation: portfolio 1s linear;
 }
@@ -504,18 +548,16 @@ button:hover {
 .star:hover ~ .star {
   background-color: yellow; /* Adjust color as needed */
 }
-
 /* Glowing Box*/
 .glowing-rectangle {
-  width: 32em;
+  width: 40em;
   height: 36em;
   margin: 50px auto;
-  margin-left: 69em;
+  margin-left: 65em;
   border: 2px solid transparent;
   position: absolute;
   animation: glow 2s infinite alternate;
 }
-
 @keyframes glow {
   0% {
     border-color: white; 
@@ -534,7 +576,6 @@ button:hover {
     box-shadow: 0 0 20px orange;
   }
 }
-
 .LastFooterImage{
   margin-right: 19em;
   height: 240px;
