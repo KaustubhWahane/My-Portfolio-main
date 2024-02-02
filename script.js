@@ -1,9 +1,9 @@
 function showAlert1() {
-    alert("Will brush up Bit ;)");
+    alert("Will brush up a Bit ;)");
 }
 
 function showAlert2() {
-  prompt("Sorry for this is there any Improvement?");
+  prompt("Sorry for this is there any improvement?");
 }
 
 function showAlert3() {
@@ -11,11 +11,11 @@ function showAlert3() {
 }
 
 function showAlert4() {
-  alert("Dhyanwaad");
+  alert("Highly Appreciated!!");
 }
 
 function showAlert5() {
-  alert("Thank you for Liking It");
+  alert("Thank you so much for liking It");
 }
 
 
