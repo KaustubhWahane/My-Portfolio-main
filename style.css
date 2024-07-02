@@ -16,7 +16,7 @@ html{
 .myName{
   color: #fff;
   margin-top: 0.5em;
-  margin-left: 9em;
+  margin-left: 14em;
   font-family: 'Luckiest Guy', cursive;
   animation: name 2s ease-in-out ;
   background-image: url('assets/cssTextWrap.jpg');
